@@ -15,3 +15,19 @@ let username = document.getElementById("name");
 let backgroundColor = document.getElementById("background-color");
 let foregroundColor = document.getElementById("foreground-color");
 let greeting = document.getElementById("greeting");
+
+document.addEventListener("DOMContentLoaded" , function () {
+    applyPreferences();
+});
+
+form.addEventListener("Submit" , function (event) {
+    event.preventDefault();
+
+    localStorage.setItem("username" , username.value);
+    localStorage.setItem("backgroundColor" , backgroundColor.value);
+    localStorage.setItem("foregroundColor" , foregroundColor.value);
+
+    applyPreferences();
+
+    alert("Your preference has been saved");
+});
