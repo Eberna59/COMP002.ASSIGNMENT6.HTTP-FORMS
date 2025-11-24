@@ -9,3 +9,9 @@
 // also want to call this function again when the user saves their preferences to
 // immediately apply them. Make sure you also notify the user somehow that the preferences
 // were saved.
+
+let form = document.getElementById("preferences-form");
+let username = document.getElementById("name");
+let backgroundColor = document.getElementById("background-color");
+let foregroundColor = document.getElementById("foreground-color");
+let greeting = document.getElementById("greeting");
