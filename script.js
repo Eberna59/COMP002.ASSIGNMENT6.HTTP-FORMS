@@ -31,3 +31,13 @@ form.addEventListener("Submit" , function (event) {
 
     alert("Your preference has been saved");
 });
+
+function applyPreferences() {
+    let savedName = localStorage.getItem("username");
+    let savedBg = localStorage.getItem("backgroundColor");
+    let savedFg = localStorage.getItem("foregroundColor");
+
+    if (savedName !== null) {
+        document.body.style.color = savedFg;
+    }
+}
